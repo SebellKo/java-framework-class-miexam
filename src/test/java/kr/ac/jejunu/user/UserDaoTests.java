@@ -9,7 +9,7 @@ import static org.hamcrest.core.Is.is;
 
 public class UserDaoTests {
 
-    String name = "hulk";
+    String name = "sejong";
     String password = "1234";
     @Test
     public void get() throws SQLException, ClassNotFoundException {

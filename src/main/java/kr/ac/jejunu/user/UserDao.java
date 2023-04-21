@@ -31,7 +31,7 @@ public class UserDao {
         PreparedStatement preparedStatement = connection.prepareStatement("insert into userInfo (name, password) values (?, ?)", Statement.RETURN_GENERATED_KEYS);
         preparedStatement.setString(1, user.getName());
         preparedStatement.setString(2, user.getPassword());
-        preparedStatement.executeQuery();
+        preparedStatement.executeUpdate();
         ResultSet resultSet = preparedStatement.getGeneratedKeys();
         resultSet.next();
 
