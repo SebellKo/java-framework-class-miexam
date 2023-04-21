@@ -1,5 +1,4 @@
 package kr.ac.jejunu.user;
-"hello";
 public class User {
     private Long id;
     private String name;
